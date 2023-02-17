@@ -1,0 +1,214 @@
+/* 
+Plan:
+
+koble til github
+
+Fikse lys på firkantet nav bar boarder
+
+Fikse logo (lage en egen kanskje)
+
+Lage egen sosial tab
+
+Fikse like store knapper
+
+presentasjoner, teknoforståelse (kanskje)
+
+*/
+
+
+/*Overskrifter*/
+body {
+    background-color: #0A37D6;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.underoverskrift {
+    text-align: right;
+    font-size: 15px;
+    color: white;
+    
+}
+.header {
+    padding: 30px;
+    background: #272C98;
+    color: white;
+    text-align: center;
+    
+}
+.header2 {
+    padding: 1px;
+    background: #171A65;
+    
+
+}
+
+.headervelkommen {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.logo {
+    width: 25%;
+    float: left;
+    padding: 25px;
+}
+
+.header h1{
+    font-size: 35px;
+    text-align: center;
+    position:relative; left:-250px
+}
+
+hr {
+    height: 2px;
+    background-color: #171A65;
+    border-color: #171A65;
+    float: center;
+}
+.footer {
+    color: black;
+    text-align: center;
+}
+
+/*Bilder*/
+
+.ASbilde1 {
+    width: 100%;
+    height: auto;
+    float: left;
+    padding: 17px;
+    position:relative; left: -15px;
+}
+
+.denkule {
+    float: right;
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+    position:relative; up: -20px;
+
+}
+
+/*Linker*/
+
+a {
+    color:white;
+}
+a:hover {
+    color: white;
+}
+a:visited {
+    color: grey;
+}
+
+/*Lister for knapper*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    background-color: #213BC0;
+    text-decoration: none;
+}
+
+
+/* Knapper*/
+.dropbtn {
+    background-color: #213BC0;
+    color: white;
+    padding: 16px;
+    margin: 9px 145px;
+    font-size: 16px;
+    border: none;
+    float: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #171A65;
+    min-width: 100px;
+    box-shadow: 100px, 8px, 16px, 0px, rgba(0, 0, 0, 0, 2);
+    z-index: 1;
+    margin: -10px 145px;
+    border-radius: 0 0 20px 20px;
+}
+
+.dropdown-content a:hover {background-color: blue;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: blue;}
+
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Innhold */
+.contentbackgroundleft {
+    background: #272C98;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 45.9%;
+    float: left;
+    border-radius: 20px;
+}
+
+.contentbackgroundright {
+    background: #272C98;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 45.9%;
+    float: right;
+    border-radius: 20px;
+}
+
+.contentbackgroundcenter {
+    background: #272C98;
+    float: center;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 45.9%;
+    border-radius: 20px;
+    position:relative; left:375px;
+}
+
+.contentbackgroundcenterlong {
+    background: #272C98;
+    float: left;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 96%;
+    border-radius: 20px;
+}
+
+.right-image {
+    width: 100%;
+}
+
+.ftohistorie {
+    width: 24%;
+    padding: 5px;
+}
