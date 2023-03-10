@@ -1,17 +1,11 @@
 /* 
 Plan:
 
-koble til github
-
 Fikse lys på firkantet nav bar boarder
 
 Fikse logo (lage en egen kanskje)
 
-Lage egen sosial tab
-
 Fikse like store knapper
-
-presentasjoner, teknoforståelse (kanskje)
 
 */
 
@@ -39,8 +33,6 @@ body {
 .header2 {
     padding: 1px;
     background: #171A65;
-    
-
 }
 
 .headervelkommen {

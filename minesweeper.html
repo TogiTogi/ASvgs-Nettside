@@ -1,22 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KP</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./JavaScript/minesweeperfiles/minesweeperstyles.css">   
+    <script src="./JavaScript/minesweeperfiles/script.js" type="module"></script> <!-- type=module spesifies that it is a .js file / that it is javascript -->
+    <title>Minesweeper</title>
 </head>
-
 <body>
-    <div class="header">
-            <a href="index.html"><img class="logo" src="./img/skolelogo.png" alt="Amalie Skram Logoen"></a>
-            <h1>Konseptutv. og programmering</h1>       
-    </div>
 
-        <!--Hjem knapp1-->
+    <!--Hjem knapp1-->
     <div class="header2">
-        <div class="dropdown">  
+        <div class="dropdown">
             <a href="index.html"> <button class="dropbtn">Hjem</button></a>
             <div class="dropdown-content">
             </div>
@@ -61,39 +57,26 @@
             </div>
         </div>
     </div>
+    <h3 class="title">Minesweeper</h3>
+    
+    <div class="inputs">
+        <label for="gridsize">Grid Size:</label>
+        <input type="number" id="gridsize" name="gridsize"> <br>
+        <label for="gridsize">Bombs:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="number" id="chooseBombs" name="chooseBombs"> <br>
+        <input type="submit" value="submit" id="submit">
+        <!--<button id="startbtn" type ="button" class="startbtn">Start Game!</button> <br><br>-->
+    </div>
 
-    <!--Hoved innhold-->
-    <div class="contentbackgroundleft">
-        <img class="right-image" src="./img/2022-10-28 (2).png" alt="bilde av koden min">
-    </div>
-    <div class="contentbackgroundright">
-        <p>I konseptutvikling og programmering har vi startet å lære oss html og css. Denne nettsiden du er på nå, er vår aller første store programmerings oppgave.</p>
-        <p> Før det måtte jeg jo lære meg språkene, siden dette var nytt for meg. For å starte å lære meg css og html, startet vi med å leke oss rundt i Visual Studio Code. Læreren viste oss også litt av hvert. Blandt annet prøvde vi å lage stein saks papir ved hjelp av koding.</p>
-        <p>Senere prøvde jeg å lære selv. Da brukte jeg <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a> som hadde noen gode og enkle opplæringer på hvordan man brukte både html, og css.</p>
-      
-    </div>
+    <!--TIMER-->
+    <div id="js_timer">
+        <div id="timer"></div>
+    <div>
 
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        
-        <hr>
-    <div class="footer">
-        <p>Opphavsrett til Trgrim Brevik Pedersen</p>
-        <p>Fordi jeg lagde nettsiden</p>
+    <div class="minesleft">
+        Mines Remaining: <span data-mine-count></span> <!--span tag is an inline container used to mark up a part of a text, or a part of a document.-->
     </div>
-    <hr>
+    
+    <div class="board" id="board"></div>
 </body>
 </html>
