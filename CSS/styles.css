@@ -10,6 +10,11 @@ Fikse like store knapper
 */
 
 
+/*Warning symbol*/
+#warning {
+    color:yellow !important;
+}
+
 /*Overskrifter*/
 body {
     background-color: #0A37D6;
